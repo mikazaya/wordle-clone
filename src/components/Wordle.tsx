@@ -8,7 +8,6 @@ const Wordle = ({ solution }: { solution: string }) => {
   const [isGameOver, setIsGameOver] = useState(false);
   const [isSolutionFound, setIsSolutionFound] = useState(false);
 
-  console.log(solution, currentGuess);
 
   useEffect(() => {
     const typeLetter = (char: string) => {
