@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "karnak-nyt";
+  src: url("./assets/karnak-normal-400.ttf");
+}
+body {
+  background-color: black;
+  color: white;
+  border-color: white;
+  font-family: "karnak-nyt";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+nav {
+  border-bottom: 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2em;
+  margin: 4rem;
+}
+.row {
+  display: flex;
+  gap: 3px;
+}
+.tile {
+  height: 60px;
+  width: 60px;
+  border: 1px solid;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.correct {
+  background-color: lightgreen;
+}
+.almost {
+  background-color: darkkhaki;
+}
+.incorrect {
+  background-color: gray;
+}
